@@ -1,0 +1,2 @@
+class Contactbook < ApplicationRecord
+end

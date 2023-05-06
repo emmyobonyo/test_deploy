@@ -1,0 +1,14 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Contactbooks</h1>
+
+<div id="contactbooks">
+  <% @contactbooks.each do |contactbook| %>
+    <%= render contactbook %>
+    <p>
+      <%= link_to "Show this contactbook", contactbook %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New contactbook", new_contactbook_path %>
